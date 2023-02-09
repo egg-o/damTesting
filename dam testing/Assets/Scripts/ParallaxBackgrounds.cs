@@ -27,12 +27,12 @@ public class ParallaxBackgrounds : MonoBehaviour
         }
     }
 
-    void Update()
+    void LateUpdate()
     {
         for (int i = 0; i < backgrounds.Length; i++)
         {
             float parallax = (previousCamPos.x - cam.position.x) * parallaxScales[i];
-            float backgroundTargetPosX = backgrounds[i].position.x + parallax;
+            float backgroundTargetPosX = backgrounds[i].position.x + (parallax * 2);
 
             Vector3 backgroundTargetPos = new Vector3(backgroundTargetPosX, backgrounds[i].position.y, backgrounds[i].position.z);
 
