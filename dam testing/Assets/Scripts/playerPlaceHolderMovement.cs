@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cameraMovementTesting : MonoBehaviour
+public class playerPlaceHolderMovement : MonoBehaviour
 {
     public float speed = 10f;
     // Start is called before the first frame update
